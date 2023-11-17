@@ -1,0 +1,526 @@
+/* 
+7510F7  -  rgb(117,16,247)   --  main color
+FFFFFF  -  rgb(255,255,255)   --  main bg color
+141C3A  -  rgb(20,28,58)     --  hed  text colors
+222222  -  rgb(20,28,58)     --  pyara  text colors
+5BE9B9  -  rgb(91,233,185)     --  alternative  button colors
+opposite color
+7510F7  -  rgb(117,16,247)   --  main bg color
+FFFFFF  -  rgb(255,255,255)   --  main color
+FFFFFF  -  rgb(255,255,255)     --  hed  text colors
+D8BCFC  -  rgb(216,188,252)     --  pyara  text colors
+141C3A  -  rgb(20,28,58)     --  alternative bg colors
+
+
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Michroma', sans-serif; */
+    /* background: var(--bg-color); */
+    transition: all 0.2s ease-in-out;
+}
+
+:root {
+    --main-color: #6E07F3;
+    /* 7510F7*/
+    --bg-color: #FFFFFF;
+    --op_text-color: #FFFFFF;
+    --text-color: #141C3A;
+    --pyara-color: #222222;
+    --alt_button-color: #5BE9B9;
+    --text-shadow: 3px 3px 3px #ffffffff;
+    --box-shadow: 3px 3px 8px #000000;
+}
+
+
+/* ................header starts from here */
+header {
+    width: 100%;
+    padding: 30px 0;
+}
+
+header .nav_bar {
+    width: 100%;
+    height: 60px;
+    padding: 0 7%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_bar .logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.nav_bar .logo img {
+    height: 180%;
+}
+
+.nav_bar .menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    gap: 5%;
+    /* padding: 5px 10px; */
+}
+
+.nav_bar .menu div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100px; */
+}
+
+.nav_bar .menu .cv {
+    height: 100%;
+    color: var(--pyara-color);
+}
+
+.nav_bar .menu div a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    font-size: 17px;
+}
+
+.nav_bar .menu .cv a {
+    height: 100%;
+    color: var(--pyara-color);
+}
+
+.nav_bar .menu .cv a:hover {
+    color: var(--main-color);
+}
+
+.nav_bar .menu .contact {
+    height: 100%;
+}
+
+.nav_bar .menu .contact a {
+    height: 100%;
+    border-radius: 60px;
+    border: 1.9px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.nav_bar .menu .contact a:hover {
+    color: var(--op_text-color);
+    background-color: var(--main-color);
+
+}
+
+
+/* ................header ends from here */
+/* ................section1 start from here */
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+}
+
+section.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 32px 0;
+}
+
+.hero .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 48px;
+    margin: 20px 0;
+}
+
+.hero .body h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: var(--text-color);
+    margin: 0 0 24px;
+}
+
+.hero .body h2 {
+    font-weight: 250;
+    font-size: 22px;
+    margin: 0 0 24px;
+}
+
+.hero .body .img {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0 0 50% 50%;
+    margin-bottom: 35px;
+}
+
+.hero .body .img img {
+    height: 150%;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.hero .body .img::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 43px;
+    z-index: 1;
+    border-radius: 50%;
+    transform: translateY(20px);
+}
+
+.hero .teq_img {
+    padding: 0 24px;
+}
+
+.hero .teq_img img {
+    max-width: 860px;
+    margin-bottom: -35px;
+}
+
+/* ................section1 end from here */
+/* ................section2 end from here */
+section.meet {
+    width: 100%;
+    padding: 144px 72px 288px;
+    background-color: var(--main-color);
+}
+
+section.meet .container {
+    width: 100%;
+    background: transparent;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meet .container .words {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+}
+
+.meet .container .words h1 {
+    margin-bottom: 24px;
+    font-size: 32px;
+    color: var(--op_text-color);
+    background: transparent;
+}
+
+.meet .container .words h2 {
+    font-size: 18px;
+    font-weight: 450;
+    color: var(--op_text-color);
+    background: transparent;
+}
+
+/* ................section2 end from here */
+/* ................section3 starts from here */
+section.skills {
+    width: 100%;
+    /* height: 100vh; */
+    min-height: 100vh;
+    padding: 80px 24px 16px;
+    background: transparent;
+    margin: -244px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .box {
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 9px;
+    max-width: 1344px;
+    /* justify-content: center; */
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 10px #0002;
+    border: 1px solid #0002;
+}
+
+.skill .box .columns {
+    height: 100%;
+    background: var(--bg-color);
+    /* justify-content: center; */
+    display: flex;
+}
+
+.skills .box .columns:nth-child(2) {
+    border-right: 1px solid #0002;
+    border-left: 0.1px solid #0002;
+}
+
+.skills .box .columns .skill {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 45px;
+    align-items: center;
+
+}
+
+.skills .box .columns .skill .i {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--alt_button-color);
+}
+
+.skills .box .columns .skill .icon {
+    color: var(--text-color);
+    background: transparent;
+    margin: 10px 15px;
+    width: 42.5px;
+    height: 34px;
+    /* overflow: hidden; */
+}
+
+.skills .box .columns .skill h1 {
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+.skills .box .columns .skill p {
+    text-align: center;
+    font-size: 18px;
+    /* margin: 0 0 36px; */
+}
+
+.skills .box .columns .skill p.title {
+    font-size: 18px;
+    margin: 50px 0 8px;
+    color: #6E07F3;
+}
+
+.skills .box .columns .skill ul {
+    font: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.skills .box .columns .skill ul li {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* ................section3 end from here */
+
+/* ................section4 starts from here */
+section.projects {
+    width: 100%;
+    padding: 144px 72px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.projects .container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+
+.projects .container h1 {
+    font-size: 32px;
+    margin: 0 0 24px;
+    font-weight: 600;
+}
+
+.projects .container h2 {
+    font-size: 20px;
+    margin: 0 0 24px;
+}
+
+.projects .container .project-grid {
+    padding: 64px 0;
+}
+
+.project-grid .columns.fflex_box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 15px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    
+}
+
+.columns .column{
+    width: 100%;
+    height: 100%;
+    /* padding: 12px; */
+    border-radius: 10px;
+
+}
+.columns .column figure{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.project-thumb {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.columns .column figure:hover .project-thumb{
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* transition: all 0.5s ease-in-out; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.overlay{
+    position: absolute;
+    background-color: var(--text-color);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .1;
+    transition: all 0.5s ease-in-out;
+}
+
+.columns .column figure:hover .overlay{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.columns .column figure:hover figcaption{
+    /* transition: all 1s ease-in-out ; */
+    animation: show 0.5s 1 ease forwards;
+    z-index: 99;
+    color: var(--op_text-color);
+    text-align: center;
+    font-size: 18px;
+    opacity: 0;
+}
+.columns .column figure figcaption h1{
+    font-size: 20px;
+    padding: 0 0 28px;
+    text-align: center;
+    padding: 0 20px;
+}
+figcaption .button{
+    padding: 5px 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    border: 2px solid var(--main-color);
+    color: var(--op_text-color);
+    gap: 5px;
+}
+figcaption .button:hover{
+    background: var(--main-color);
+}
+figcaption .button span{
+    font-size: 18px;
+}
+figcaption .button span .fa-angle-right{
+    font-size: 18px;
+    height: 18px;
+}
+
+@keyframes show {
+    0%{
+        /* opacity: 0; */
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.more{
+    width: 100%;
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more .column .button{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 7px 14px;
+    border: 2px solid var(--main-color);
+    /* display: flex;
+    margin: auto; */
+    margin: auto;
+
+}
+.more .column .button .icon .boll{
+    width: 22px;
+    height: 22px;
+}
+/* ................sectio.columnsere */
